@@ -21,9 +21,9 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     druid:
       master:
-        url: jdbc:mysql://rm-2ze56pa6q4610qt07co.mysql.rds.aliyuncs.com:3306/xznba?useUnicode=true&characterEncoding=utf-8
-        username: xz_nba
-        password: Qdxz102030
+        url: jdbc:mysql://127.0.0.1:3306/xznba?useUnicode=true&characterEncoding=utf-8
+        username: root
+        password: 123456
 
 
 logging:

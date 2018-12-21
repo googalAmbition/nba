@@ -1,0 +1,40 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /nba/
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 30MB
+  http:
+    encoding:
+      charset: UTF-8
+  thymeleaf:
+    mode: HTML
+    encoding: UTF-8
+    cache: false
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      master:
+        url: jdbc:mysql://rm-2ze56pa6q4610qt07co.mysql.rds.aliyuncs.com:3306/xznba?useUnicode=true&characterEncoding=utf-8
+        username: xz_nba
+        password: Qdxz102030
+
+
+logging:
+#  config: classpath:logback-boot.xml # \u65E5\u5FD7\u8BBE\u7F6E
+  level:
+    com.wisdom.twlyyx.mapper: debug
+#    com.wisdom.twlyyx: debug
+    org.springframework: WARN
+    org.spring.springboot.dao: debug
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+ # \u5B58\u653E\u6620\u5C04mapper\u6587\u4EF6 \u626B\u63CFMapper.xml\u7ED3\u5C3E\u7684\u6587\u4EF6
+#  type-aliases-package: com.wisdom.twlyyx.entity # \u5BF9\u8C61\u5B58\u653E\u4F4D\u7F6E
+#  configLocation: classpath:mybatis/mybatis-config.xml

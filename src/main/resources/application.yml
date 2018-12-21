@@ -21,9 +21,9 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     druid:
       master:
-        url: jdbc:mysql://127.0.0.1:3306/xznba?useUnicode=true&characterEncoding=utf-8
+        url: jdbc:mysql://127.0.0.1:3306/nba?useUnicode=true&characterEncoding=utf-8
         username: root
-        password: 123456
+        password: root
 
 
 logging:
@@ -34,7 +34,7 @@ logging:
     org.springframework: WARN
     org.spring.springboot.dao: debug
 mybatis-plus:
-  mapper-locations: classpath:mapper/*.xml
+#  mapper-locations: classpath:mapper/*.xml
  # \u5B58\u653E\u6620\u5C04mapper\u6587\u4EF6 \u626B\u63CFMapper.xml\u7ED3\u5C3E\u7684\u6587\u4EF6
 #  type-aliases-package: com.wisdom.twlyyx.entity # \u5BF9\u8C61\u5B58\u653E\u4F4D\u7F6E
 #  configLocation: classpath:mybatis/mybatis-config.xml

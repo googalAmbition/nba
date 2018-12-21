@@ -1,4 +1,4 @@
-package com.xz.nba.webmagic;
+package com.xz.nba.controller;
 
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
